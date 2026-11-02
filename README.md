@@ -89,20 +89,6 @@ An educational ERC-20 implementation exploring Solidity, OpenZeppelin, and deplo
 
 ---
 
-## 📊 GitHub Statistics
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=mhmdsdqi87-cloud&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhmdsdqi87-cloud&layout=compact&theme=tokyonight&hide_border=true" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=mhmdsdqi87-cloud&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
 ## 🎯 Current Focus
 
 - 🚀 Building and improving TEKA products
