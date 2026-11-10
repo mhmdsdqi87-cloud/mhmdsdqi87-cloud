@@ -1,196 +1,164 @@
-```markdown
-<div align="center">
+ <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,35:17120A,70:5C430D,100:D4AF37&text=MOHAMMAD%20SADEGHI&fontSize=44&fontColor=F5D76E&fontAlignY=38&desc=SOFTWARE%20DEVELOPER%20%7C%20FOUNDER%20OF%20TEKA&descSize=14&descAlignY=58&animation=fadeIn" alt="Mohammad Sadeghi - Golden Galaxy header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080808,45:17120A,100:C9A227&height=190&section=header&text=MOHAMMAD%20SADEGHI&fontSize=42&fontColor=F5D76E&fontAlignY=38&desc=Building%20Ideas%20Into%20Technology&descAlignY=60&descSize=16" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=2800&pause=900&color=F5D76E&center=true&vCenter=true&repeat=true&width=650&height=45&lines=WELCOME+TO+MY+DIGITAL+UNIVERSE;SELF-TAUGHT+SOFTWARE+DEVELOPER;FOUNDER+OF+TEKA;BUILDING+IDEAS+INTO+DIGITAL+EXPERIENCES" alt="Animated introduction" />
-
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=F5D76E)](https://github.com/mhmdsdqi87-cloud)
-[![TEKA](https://img.shields.io/badge/TEKA-0D1117?style=for-the-badge&logo=googleearth&logoColor=F5D76E)](https://teka-web-beta.vercel.app)
-[![TEKA NEXUS](https://img.shields.io/badge/TEKA_NEXUS-0D1117?style=for-the-badge&logo=protondrive&logoColor=F5D76E)](https://teka-nexus.vercel.app)
-[![Email](https://img.shields.io/badge/CONTACT-0D1117?style=for-the-badge&logo=gmail&logoColor=F5D76E)](mailto:mhmdsdqi87@gmail.com)
+<a href="https://teka-web-beta.vercel.app">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1200&color=E5C158&center=true&vCenter=true&width=600&lines=Self-Taught+Software+Developer;Founder+of+TEKA;Web+Development+%7C+Web3+%7C+Technology;Always+Building.+Always+Learning." alt="Typing SVG" />
+</a>
 
 <br/>
 
-<img src="https://img.shields.io/badge/FOCUS-WEB%20DEVELOPMENT-D4AF37?style=flat-square&labelColor=0D1117" />
-<img src="https://img.shields.io/badge/INTEREST-WEB3%20%26%20TECHNOLOGY-D4AF37?style=flat-square&labelColor=0D1117" />
+<a href="https://github.com/mhmdsdqi87-cloud">
+  <img src="https://img.shields.io/badge/GitHub-080808?style=for-the-badge&logo=github&logoColor=F5D76E"/>
+</a>
+<a href="https://teka-web-beta.vercel.app">
+  <img src="https://img.shields.io/badge/TEKA-C9A227?style=for-the-badge&logo=googlechrome&logoColor=080808"/>
+</a>
+<a href="https://teka-nexus.vercel.app">
+  <img src="https://img.shields.io/badge/TEKA_NEXUS-17120A?style=for-the-badge&logo=vercel&logoColor=F5D76E"/>
+</a>
+<a href="mailto:mhmdsdqi87@gmail.com">
+  <img src="https://img.shields.io/badge/Email-080808?style=for-the-badge&logo=gmail&logoColor=F5D76E"/>
+</a>
 
 </div>
 
 ---
 
-<div align="center">
+## `01 / ABOUT ME`
 
-### ✦ EXPLORING THE DIGITAL UNIVERSE ✦
+```text
+I'm Mohammad — a self-taught developer and the founder of TEKA.
 
-*One idea. One experiment. One step forward.*
+I enjoy turning ideas into real digital projects,
+exploring modern technologies, and learning by building.
 
-</div>
+My main interests are web development, software architecture,
+blockchain technology, and AI-related tools.
 
-## `01` — ABOUT ME
+I believe in starting small, experimenting, and improving
+every project one step at a time.
+```
 
-Hi! I'm **Mohammad Sadeghi**, a self-taught software developer and founder of **TEKA**.
+## `02 / CURRENT FOCUS`
 
-I'm passionate about technology, software development, and turning ideas into practical digital experiences.
+- Building and improving the TEKA ecosystem.
+- Developing modern web applications.
+- Exploring Web3 and blockchain development.
+- Learning software architecture and backend development.
+- Experimenting with new technologies and independent projects.
 
-I enjoy learning by building, experimenting with new tools, solving development challenges, and continuously improving my skills.
-
-**Areas I'm exploring:**
-
-- Frontend and modern web development
-- JavaScript and React
-- Backend development and APIs
-- Blockchain and Web3
-- Software architecture
-- Independent technology projects
-
----
-
-## `02` — FEATURED PROJECTS
+## `03 / FEATURED PROJECTS`
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<h3>🟨 TEKA</h3>
+<h3 align="center">⚡ TEKA</h3>
 
-**Made for Technology**
+<p align="center">
+A technology-focused independent project exploring web development, blockchain, and digital innovation.
+</p>
 
-An independent technology initiative exploring modern web experiences, digital ecosystems, and blockchain concepts.
+<p align="center">
+<a href="https://teka-web-beta.vercel.app">
+<img src="https://img.shields.io/badge/Explore%20Website-C9A227?style=for-the-badge&logo=googlechrome&logoColor=black"/>
+</a>
+</p>
 
-**Focus:**
-- Web development
-- Digital products
-- Technology experiments
-- Blockchain exploration
-
-<a href="https://teka-web-beta.vercel.app/">🌐 Website</a> ·
-<a href="https://github.com/mhmdsdqi87-cloud/TEKA_web">💻 Repository</a>
+<p align="center">
+<a href="https://github.com/mhmdsdqi87-cloud/TEKA_web">
+<img src="https://img.shields.io/badge/View%20Repository-111111?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
 
 </td>
 <td width="50%" valign="top">
 
-<h3>🌌 TEKA NEXUS</h3>
+<h3 align="center">🌌 TEKA NEXUS</h3>
 
-**Connecting Ideas**
+<p align="center">
+An independent technology initiative focused on exploring and building digital experiences.
+</p>
 
-An experimental technology project focused on modern web development and exploring new digital possibilities.
+<p align="center">
+<a href="https://teka-nexus.vercel.app">
+<img src="https://img.shields.io/badge/Explore%20NEXUS-C9A227?style=for-the-badge&logo=googlechrome&logoColor=black"/>
+</a>
+</p>
 
-**Focus:**
-- Modern web technologies
-- Digital experiences
-- Product experimentation
-- Continuous development
-
-<a href="https://teka-nexus.vercel.app/">🌐 Website</a> ·
-<a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS">💻 Repository</a>
+<p align="center">
+<a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS">
+<img src="https://img.shields.io/badge/View%20Repository-111111?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
 
 </td>
 </tr>
 </table>
 
----
-
-## `03` — TECHNOLOGY STACK
+## `04 / TECHNOLOGY STACK`
 
 <div align="center">
 
-**FRONTEND**
+**Frontend**
 
-<img src="https://skillicons.dev/icons?i=html,css,js,react,vite&theme=dark" alt="Frontend technologies" />
+<img src="https://skillicons.dev/icons?i=html,css,js,react,vite&theme=dark" />
 
-<br/><br/>
+**Backend & Runtime**
 
-**BACKEND & PROGRAMMING**
+<img src="https://skillicons.dev/icons?i=python,flask,nodejs&theme=dark" />
 
-<img src="https://skillicons.dev/icons?i=python,flask,nodejs&theme=dark" alt="Backend technologies" />
+**Blockchain & Development Tools**
 
-<br/><br/>
-
-**BLOCKCHAIN & TOOLS**
-
-<img src="https://skillicons.dev/icons?i=solidity,git,github,vscode&theme=dark" alt="Blockchain and development tools" />
+<img src="https://skillicons.dev/icons?i=solidity,git,github,vscode&theme=dark" />
 
 </div>
 
----
-
-## `04` — GITHUB STATISTICS
+## `05 / GITHUB STATISTICS`
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=mhmdsdqi87-cloud&show_icons=true&hide_border=true&bg_color=0D1117&title_color=F5D76E&icon_color=D4AF37&text_color=E6EDF3&rank_icon=github" alt="GitHub statistics" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=mhmdsdqi87-cloud&show_icons=true&hide_border=true&bg_color=080808&title_color=E5C158&icon_color=C9A227&text_color=E6E6E6&rank_icon=github" />
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhmdsdqi87-cloud&layout=compact&hide_border=true&bg_color=0D1117&title_color=F5D76E&text_color=E6EDF3&langs_count=8" alt="Most used programming languages" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhmdsdqi87-cloud&layout=compact&hide_border=true&bg_color=080808&title_color=E5C158&text_color=E6E6E6" />
 
-<br/><br/>
-
-<img width="85%" src="https://streak-stats.demolab.com?user=mhmdsdqi87-cloud&hide_border=true&background=0D1117&ring=F5D76E&fire=D4AF37&currStreakLabel=F5D76E&sideLabels=E6EDF3&dates=888888&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub contribution streak" />
+<img width="95%" src="https://streak-stats.demolab.com?user=mhmdsdqi87-cloud&hide_border=true&background=080808&ring=C9A227&fire=E5C158&currStreakLabel=E5C158&sideLabels=E6E6E6&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888" />
 
 </div>
 
----
-
-## `05` — CONTRIBUTION ACTIVITY
+## `06 / CONTRIBUTION GRAPH`
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=0D1117&color=F5D76E&line=D4AF37&point=FFFFFF&area=true&hide_border=true" alt="GitHub contribution activity graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=080808&color=E5C158&line=C9A227&point=FFFFFF&area=true&hide_border=true" width="100%" />
 
 </div>
 
----
+## `07 / BEYOND THE CODE`
 
-## `06` — CURRENT OBJECTIVES
-
-| OBJECTIVE | DIRECTION |
-|:---|:---|
-| Full-stack development | Expand practical development skills |
-| TEKA | Continue building the technology initiative |
-| TEKA NEXUS | Improve and expand the project |
-| Blockchain | Explore smart contracts and Web3 |
-| Software engineering | Strengthen architecture and fundamentals |
-| Product development | Turn experiments into useful products |
-
----
-
-## `07` — MY PHILOSOPHY
-
-<div align="center">
-
-<img width="90%" src="https://capsule-render.vercel.app/api?type=rect&height=110&color=0:111111,50:2B210B,100:111111&text=LEARN.%20BUILD.%20EXPERIMENT.%20IMPROVE.&fontSize=20&fontColor=F5D76E&fontAlignY=55" alt="Developer philosophy" />
-
-<br/>
-
-**Great things begin as small experiments.**
-
-I believe in starting with what I have, learning through the process, and making every version better than the last.
-
-</div>
-
----
-
-## `08` — CONNECT WITH ME
-
-<div align="center">
-
-Interested in technology, software development, or creative projects?
-
-Feel free to connect.
-
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=F5D76E)](https://github.com/mhmdsdqi87-cloud)
-[![Email](https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=F5D76E)](mailto:mhmdsdqi87@gmail.com)
-[![TEKA](https://img.shields.io/badge/TEKA-0D1117?style=for-the-badge&logo=googleearth&logoColor=F5D76E)](https://teka-web-beta.vercel.app)
-
-<br/>
-
-<sub>✦ BUILT WITH CURIOSITY · DESIGNED FOR THE DIGITAL UNIVERSE ✦</sub>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:D4AF37,45:5C430D,100:050505&height=130&section=footer" alt="Golden Galaxy footer" />
-
-</div>
+```text
+01. Curiosity over assumptions.
+02. Building over waiting.
+03. Learning through experimentation.
+04. Progress over perfection.
+05. Technology as a way to create possibilities.
 ```
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:080808,50:17120A,100:C9A227&height=2&section=footer" width="100%"/>
+
+### `LET'S BUILD SOMETHING MEANINGFUL.`
+
+<a href="mailto:mhmdsdqi87@gmail.com">
+<img src="https://img.shields.io/badge/CONTACT_ME-C9A227?style=for-the-badge&logo=gmail&logoColor=080808"/>
+</a>
+
+<br/><br/>
+
+<sub>Designed & built by Mohammad Sadeghi · Founder of TEKA</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:C9A227,55:17120A,100:080808&height=100&section=footer" width="100%"/>
+
+</div>
