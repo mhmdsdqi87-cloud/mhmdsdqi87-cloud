@@ -1,182 +1,195 @@
  <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:02030A,25:090D20,55:21183B,80:8B641E,100:E5C158&text=MOHAMMAD%20SADEGHI&fontSize=48&fontColor=FFE7A0&fontAlignY=38&desc=TRANSMISSION%20FROM%20THE%20TEKA%20UNIVERSE&descSize=14&descAlignY=60&animation=twinkling&stroke=E5C158&strokeWidth=1" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:000000,15:09090D,35:17120B,65:49300C,85:B88628,100:080808&text=MOHAMMAD%20SADEGHI&fontSize=52&fontColor=FFE2A0&fontAlignY=40&desc=FOUNDER%20OF%20TEKA%20%7C%20SOFTWARE%20DEVELOPER&descSize=15&descAlignY=59&animation=twinkling&stroke=C99B42&strokeWidth=1" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=19&duration=2800&pause=900&color=E5C158&center=true&vCenter=true&width=750&lines=WELCOME+TO+MY+DIGITAL+UNIVERSE;FOUNDER+OF+TEKA;SELF-TAUGHT+SOFTWARE+DEVELOPER;EXPLORING+THE+FUTURE+THROUGH+CODE;BUILDING+BEYOND+THE+ORDINARY" />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=18&duration=2600&pause=1000&color=E6BD69&center=true&vCenter=true&width=700&lines=EXPLORING+THE+DIGITAL+UNIVERSE;BUILDING+THE+TEKA+ECOSYSTEM;SOFTWARE+%7C+WEB3+%7C+BLOCKCHAIN;TURNING+IDEAS+INTO+REALITY" />
 
 <br/>
 
-<img src="https://img.shields.io/badge/SYSTEM-ONLINE-080808?style=for-the-badge&labelColor=17120A&color=C9A227"/>
-<img src="https://img.shields.io/badge/SECTOR-TECHNOLOGY-080808?style=for-the-badge&labelColor=17120A&color=C9A227"/>
-<img src="https://img.shields.io/badge/BASE-TEKA%20UNIVERSE-080808?style=for-the-badge&labelColor=17120A&color=C9A227"/>
+<img src="https://img.shields.io/badge/✦_INDEPENDENT_BUILDER-080808?style=for-the-badge&labelColor=080808&color=C49A45"/>
+<img src="https://img.shields.io/badge/✦_TEKA_FOUNDER-080808?style=for-the-badge&labelColor=080808&color=C49A45"/>
+<img src="https://img.shields.io/badge/✦_ALWAYS_EXPLORING-080808?style=for-the-badge&labelColor=080808&color=C49A45"/>
 
 <br/><br/>
 
-<a href="https://teka-web-beta.vercel.app">TEKA</a> ◈
-<a href="https://teka-nexus.vercel.app">TEKA NEXUS</a> ◈
-<a href="https://github.com/mhmdsdqi87-cloud">GITHUB</a> ◈
-<a href="mailto:mhmdsdqi87@gmail.com">CONTACT</a>
+<a href="https://github.com/mhmdsdqi87-cloud"><img src="https://img.shields.io/badge/GITHUB-0A0A0A?style=flat-square&logo=github&logoColor=E6BD69"/></a>
+<a href="https://teka-web-beta.vercel.app"><img src="https://img.shields.io/badge/TEKA-C49A45?style=flat-square&logo=googlechrome&logoColor=000000"/></a>
+<a href="https://teka-nexus.vercel.app"><img src="https://img.shields.io/badge/TEKA_NEXUS-0A0A0A?style=flat-square&logo=vercel&logoColor=E6BD69"/></a>
+<a href="mailto:mhmdsdqi87@gmail.com"><img src="https://img.shields.io/badge/CONTACT-0A0A0A?style=flat-square&logo=gmail&logoColor=E6BD69"/></a>
+
+<br/>
+
+<sub>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</sub>
+
+### ✦ WELCOME TO MY UNIVERSE ✦
+
+*Somewhere between imagination and engineering, ideas become reality.*
+
+<sub>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</sub>
+
+</div>
+
+<h2 align="center">Ⅰ &nbsp; THE EXPLORER</h2>
+
+I'm Mohammad Sadeghi — a self-taught software developer and founder of **TEKA**.
+
+I enjoy exploring technology, building digital experiences, and turning ambitious ideas into independent projects.
+
+My interests include web development, blockchain, software architecture, and emerging technologies.
+
+<div align="center">
+
+**THINK BEYOND. BUILD WITH PURPOSE. KEEP EXPLORING.**
 
 </div>
 
 ---
 
-<div align="center">
-
-# ✦ THE EXPLORER
-
-<img width="600" src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=050610&color=E5C158&line=C9A227&point=FFFFFF&area=true&hide_border=true&custom_title=SIGNALS%20FROM%20MY%20CODING%20UNIVERSE" />
-
-</div>
-
-## `01 // IDENTITY TRANSMISSION`
-
-```text
-NAME       : MOHAMMAD SADEGHI
-DESIGNATION: SOFTWARE DEVELOPER
-ROLE       : FOUNDER OF TEKA
-ORIGIN     : DIGITAL UNIVERSE
-MISSION    : BUILD • EXPLORE • INNOVATE
-STATUS     : ALWAYS LEARNING
-```
-
-I'm a self-taught developer interested in creating digital products, exploring emerging technologies, and turning ideas into real projects.
-
-My journey revolves around software development, Web3, blockchain, and the endless possibilities of technology.
-
-**I don't just want to use technology. I want to build with it.**
-
----
-
-## `02 // THE TEKA UNIVERSE`
+<h2 align="center">Ⅱ &nbsp; THE TEKA UNIVERSE</h2>
 
 <div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:080808,50:C9A227,100:080808"/>
-
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:080808,50:C49A45,100:080808"/>
 </div>
 
 <table>
 <tr>
-<td width="50%" align="center">
+<td width="50%" align="center" valign="top">
 
-### ✧ TEKA
+<h3>✦ TEKA</h3>
 
-<img src="https://img.shields.io/badge/PROJECT-01-C9A227?style=for-the-badge&labelColor=080808"/>
+<img src="https://img.shields.io/badge/CORE_PROJECT-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=C49A45"/>
 
-An independent technology initiative exploring web development, blockchain, and digital innovation.
+<p>A technology-focused independent initiative exploring web development, blockchain, and digital innovation.</p>
 
 <a href="https://teka-web-beta.vercel.app">
-<img src="https://img.shields.io/badge/OPEN%20TEKA-Explore%20Project-C9A227?style=for-the-badge&logo=googlechrome&logoColor=black"/>
+<img src="https://img.shields.io/badge/EXPLORE_TEKA-C49A45?style=for-the-badge&logo=googlechrome&logoColor=000000"/>
 </a>
 
+<br/><br/>
+
 <a href="https://github.com/mhmdsdqi87-cloud/TEKA_web">
-<img src="https://img.shields.io/badge/SOURCE%20CODE-GitHub-17120A?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/SOURCE_CODE-111111?style=for-the-badge&logo=github&logoColor=E6BD69"/>
 </a>
 
 </td>
-<td width="50%" align="center">
+<td width="50%" align="center" valign="top">
 
-### ✧ TEKA NEXUS
+<h3>✦ TEKA NEXUS</h3>
 
-<img src="https://img.shields.io/badge/PROJECT-02-C9A227?style=for-the-badge&labelColor=080808"/>
+<img src="https://img.shields.io/badge/EXPLORATION_PROJECT-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=C49A45"/>
 
-An independent digital project focused on exploring and building modern technology experiences.
+<p>An independent project focused on exploring and creating modern digital technology experiences.</p>
 
 <a href="https://teka-nexus.vercel.app">
-<img src="https://img.shields.io/badge/OPEN%20NEXUS-Explore%20Project-C9A227?style=for-the-badge&logo=googlechrome&logoColor=black"/>
+<img src="https://img.shields.io/badge/EXPLORE_NEXUS-C49A45?style=for-the-badge&logo=googlechrome&logoColor=000000"/>
 </a>
 
+<br/><br/>
+
 <a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS">
-<img src="https://img.shields.io/badge/SOURCE%20CODE-GitHub-17120A?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/SOURCE_CODE-111111?style=for-the-badge&logo=github&logoColor=E6BD69"/>
 </a>
 
 </td>
 </tr>
 </table>
 
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:080808,50:C49A45,100:080808"/>
+</div>
+
 ---
 
-## `03 // TECHNOLOGY ARSENAL`
+<h2 align="center">Ⅲ &nbsp; TECHNOLOGY CONSTELLATION</h2>
 
 <div align="center">
 
-### FRONTEND SYSTEMS
-
+<h3>◈ FRONTEND</h3>
 <img src="https://skillicons.dev/icons?i=html,css,js,react,vite&theme=dark"/>
 
-### BACKEND & RUNTIME
-
+<h3>◈ BACKEND & RUNTIME</h3>
 <img src="https://skillicons.dev/icons?i=python,flask,nodejs&theme=dark"/>
 
-### BLOCKCHAIN & ENGINEERING
-
+<h3>◈ BLOCKCHAIN & DEVELOPMENT TOOLS</h3>
 <img src="https://skillicons.dev/icons?i=solidity,git,github,vscode&theme=dark"/>
 
 </div>
 
 ---
 
-## `04 // GITHUB COMMAND CENTER`
+<h2 align="center">Ⅳ &nbsp; GITHUB OBSERVATORY</h2>
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=mhmdsdqi87-cloud&show_icons=true&hide_border=true&bg_color=050610&title_color=E5C158&icon_color=C9A227&text_color=E6E6E6&rank_icon=github"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=mhmdsdqi87-cloud&show_icons=true&hide_border=true&bg_color=080808&title_color=E6BD69&icon_color=C49A45&text_color=E8E0D0&rank_icon=github"/>
 
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhmdsdqi87-cloud&layout=compact&hide_border=true&bg_color=050610&title_color=E5C158&text_color=E6E6E6"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhmdsdqi87-cloud&layout=compact&hide_border=true&bg_color=080808&title_color=E6BD69&text_color=E8E0D0"/>
 
+<br/><br/>
+
+<img width="80%" src="https://streak-stats.demolab.com?user=mhmdsdqi87-cloud&hide_border=true&background=080808&ring=C49A45&fire=E6BD69&currStreakLabel=E6BD69&sideLabels=E8E0D0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B8170"/>
+
+</div>
+
+---
+
+<h2 align="center">Ⅴ &nbsp; SIGNALS FROM THE UNIVERSE</h2>
+
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=080808&color=E6BD69&line=C49A45&point=FFFFFF&area=true&hide_border=true&custom_title=THE%20CONTRIBUTION%20GALAXY"/>
+
+</div>
+
+---
+
+<h2 align="center">Ⅵ &nbsp; NEXT FRONTIERS</h2>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<h3>🚀</h3>
+<b>TEKA ECOSYSTEM</b>
 <br/>
-
-<img width="95%" src="https://streak-stats.demolab.com?user=mhmdsdqi87-cloud&hide_border=true&background=050610&ring=C9A227&fire=E5C158&currStreakLabel=E5C158&sideLabels=E6E6E6&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888"/>
-
-</div>
-
----
-
-## `05 // DEEP SPACE ACTIVITY`
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=mhmdsdqi87-cloud&theme=matrix&no-frame=true&no-bg=true&margin-w=8&column=4"/>
-
-</div>
-
----
-
-## `06 // NEXT DESTINATIONS`
-
-<div align="center">
-
-| SECTOR | OBJECTIVE |
-|:---|:---|
-| 🚀 SOFTWARE | Build better applications |
-| 🌌 TEKA | Expand the TEKA ecosystem |
-| ⛓️ WEB3 | Explore blockchain technology |
-| 🧠 AI | Learn and experiment with AI |
-| 🛰️ ENGINEERING | Improve software architecture |
-
-</div>
-
----
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:080808,50:C9A227,100:080808"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=17&pause=1500&color=E5C158&center=true&vCenter=true&width=650&lines=THE+UNIVERSE+IS+NOT+THE+LIMIT;THERE+IS+ALWAYS+MORE+TO+BUILD;END+OF+TRANSMISSION..." />
-
+<sub>Building and expanding independent technology projects.</sub>
+</td>
+<td align="center" width="33%">
+<h3>⛓️</h3>
+<b>WEB3 & BLOCKCHAIN</b>
 <br/>
+<sub>Exploring decentralized technologies and smart contracts.</sub>
+</td>
+<td align="center" width="33%">
+<h3>🧠</h3>
+<b>SOFTWARE & AI</b>
+<br/>
+<sub>Learning, experimenting, and creating new experiences.</sub>
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:080808,50:C49A45,100:080808"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=17&duration=3000&pause=1200&color=E6BD69&center=true&vCenter=true&width=700&lines=THE+UNIVERSE+IS+FULL+OF+POSSIBILITIES;ONE+IDEA+CAN+START+A+NEW+WORLD;KEEP+BUILDING.+KEEP+EXPLORING." />
+
+<br/><br/>
 
 <a href="mailto:mhmdsdqi87@gmail.com">
-<img src="https://img.shields.io/badge/ESTABLISH%20CONNECTION-Contact%20Me-C9A227?style=for-the-badge&logo=gmail&logoColor=080808"/>
+<img src="https://img.shields.io/badge/✦_ESTABLISH_CONNECTION-0A0A0A?style=for-the-badge&logo=gmail&logoColor=E6BD69&color=C49A45"/>
 </a>
 
 <br/><br/>
 
-<sub>TRANSMISSION ORIGIN: TEKA UNIVERSE</sub>
+<sub>DESIGNED IN THE TEKA UNIVERSE</sub>
 
-<sub>CREATED BY MOHAMMAD SADEGHI · FOUNDER OF TEKA</sub>
+<br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:E5C158,35:21183B,70:090D20,100:02030A&animation=twinkling"/>
+<sub>MOHAMMAD SADEGHI · FOUNDER OF TEKA</sub>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&color=0:C49A45,30:49300C,65:17120B,100:000000&animation=twinkling"/>
 
 </div>
