@@ -62,7 +62,7 @@ independent projects — web development, blockchain, software architecture and 
   <img src="https://raw.githubusercontent.com/mhmdsdqi87-cloud/TEKA-NEXUS/main/.github/assets/banner.svg" alt="TEKA NEXUS — animated brand banner" width="100%"/>
 </a>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=17&duration=3000&pause=900&color=F5D678&center=true&vCenter=true&width=720&height=46&lines=TEKA+NEXUS+—+THE+FLAGSHIP;SOCIAL+NETWORK+FOR+DEVELOPERS;FREE+300-LESSON+CODING+ACADEMY;12+CODING-GAME+MODULES+%C2%B7+7+LANGUAGES" alt="TEKA NEXUS highlights" />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=17&duration=3000&pause=900&color=F5D678&center=true&vCenter=true&width=720&height=46&lines=TEKA+NEXUS+%E2%9C%A6+THE+FLAGSHIP;SOCIAL+NETWORK+FOR+DEVELOPERS;FREE+300-LESSON+CODING+ACADEMY;12+CODING-GAME+MODULES+%C2%B7+7+LANGUAGES" alt="TEKA NEXUS highlights" />
 
 **A social network for developers + a free 300-lesson coding academy + 12 coding-game
 modules — one installable PWA in 7 languages. Built solo, shipped live.**
