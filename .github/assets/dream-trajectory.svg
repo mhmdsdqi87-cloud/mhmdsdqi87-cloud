@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="The Dream — a launch trajectory toward the ITMO and KFU stars"><title>The Dream — a launch trajectory toward the ITMO and KFU stars</title><defs><radialGradient id="headGlow" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#FFF7D6" stop-opacity="0.8"/><stop offset="1" stop-color="#FFF7D6" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="tailGrad" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#FFF7D6" stop-opacity="0"/><stop offset="1" stop-color="#FFF7D6" stop-opacity="0.9"/>
+</linearGradient>
+<linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#D4AF37" stop-opacity="0"/><stop offset="0.5" stop-color="#D4AF37" stop-opacity="1"/>
+  <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+</linearGradient><linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#6E5512"/><stop offset="0.22" stop-color="#C9A227"/>
+  <stop offset="0.5" stop-color="#F7E394"/><stop offset="0.78" stop-color="#C9A227"/>
+  <stop offset="1" stop-color="#6E5512"/>
+</linearGradient><radialGradient id="pGlow" cx="0.5" cy="0.35" r="0.7">
+  <stop offset="0" stop-color="#D4AF37" stop-opacity="0.07"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="nodeHalo" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#F7E394" stop-opacity="0.5"/><stop offset="1" stop-color="#F7E394" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#1A1408"/><stop offset="1" stop-color="#07070A"/>
+</linearGradient>
+<clipPath id="panelClip"><rect x="2" y="2" width="1196" height="356" rx="16"/></clipPath>
+<path id="dreamPath" d="M 340 232 C 520 108 700 84 790 94 C 880 104 990 122 1064 130" fill="none"/></defs><rect x="1" y="1" width="1198" height="358" rx="16" fill="#07070A"/>
+<rect x="1" y="1" width="1198" height="358" rx="16" fill="url(#pGlow)"/>
+<rect x="1.5" y="1.5" width="1197" height="357" rx="16" fill="none" stroke="#D4AF37" opacity="0.35"/>
+<rect x="10" y="10" width="1180" height="340" rx="12" fill="none" stroke="#D4AF37" opacity="0.12"/>
+<circle cx="90" cy="90" r="1.3" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="3.5s" begin="0.0s" repeatCount="indefinite"/></circle><circle cx="200" cy="150" r="1.0" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="4.6s" begin="0.9s" repeatCount="indefinite"/></circle><circle cx="300" cy="60" r="1.2" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="3.9s" begin="1.7s" repeatCount="indefinite"/></circle><circle cx="450" cy="130" r="0.9" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="5.1s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="560" cy="58" r="1.3" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="3.3s" begin="2.2s" repeatCount="indefinite"/></circle><circle cx="680" cy="150" r="1.0" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="4.3s" begin="1.1s" repeatCount="indefinite"/></circle><circle cx="880" cy="50" r="1.1" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="4.9s" begin="0.6s" repeatCount="indefinite"/></circle><circle cx="960" cy="200" r="0.9" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="3.7s" begin="2.6s" repeatCount="indefinite"/></circle><circle cx="1080" cy="70" r="1.2" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="4.1s" begin="1.9s" repeatCount="indefinite"/></circle><circle cx="1140" cy="220" r="1.0" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="5.3s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="130" cy="240" r="0.9" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="4.7s" begin="2.9s" repeatCount="indefinite"/></circle><circle cx="520" cy="190" r="0.9" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="3.8s" begin="0.7s" repeatCount="indefinite"/></circle><circle cx="740" cy="220" r="1.0" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="4.4s" begin="1.5s" repeatCount="indefinite"/></circle><circle cx="420" cy="84" r="0.8" fill="#E9C75C"><animate attributeName="opacity" values="0.12;0.8;0.12" dur="5.5s" begin="2.4s" repeatCount="indefinite"/></circle>
+<path d="M234 110 H246 M240 104 V116" stroke="#FFF3C4" stroke-width="1" fill="none"><animate attributeName="opacity" values="0.15;1;0.15" dur="5.0s" begin="0.8s" repeatCount="indefinite"/></path><path d="M1023 96 H1037 M1030 89 V103" stroke="#FFF3C4" stroke-width="1" fill="none"><animate attributeName="opacity" values="0.15;1;0.15" dur="4.5s" begin="2.4s" repeatCount="indefinite"/></path>
+<g opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.72;1" dur="9s" begin="1.5s" repeatCount="indefinite"/><animateMotion path="M 140,60 L 540,130" dur="9s" begin="1.5s" repeatCount="indefinite" rotate="auto"/><line x1="-54" y1="0" x2="0" y2="0" stroke="url(#tailGrad)" stroke-width="1.8" stroke-linecap="round"/><circle r="4.95" fill="url(#headGlow)"/><circle r="2.16" fill="#FFF7D6"/></g><g opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.72;1" dur="11s" begin="5.5s" repeatCount="indefinite"/><animateMotion path="M 760,30 L 1150,110" dur="11s" begin="5.5s" repeatCount="indefinite" rotate="auto"/><line x1="-48" y1="0" x2="0" y2="0" stroke="url(#tailGrad)" stroke-width="1.6" stroke-linecap="round"/><circle r="4.4" fill="url(#headGlow)"/><circle r="1.92" fill="#FFF7D6"/></g>
+<line x1="400" y1="48" x2="494" y2="48" stroke="url(#lineGrad)" stroke-width="1"><animate attributeName="opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/></line><line x1="706" y1="48" x2="800" y2="48" stroke="url(#lineGrad)" stroke-width="1"><animate attributeName="opacity" values="1;0.5;1" dur="5s" repeatCount="indefinite"/></line>
+<text x="600" y="53" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="26" letter-spacing="8" fill="url(#titleGrad)">THE DREAM<animate attributeName="opacity" values="0.85;1;0.85" dur="5s" repeatCount="indefinite"/></text>
+<g clip-path="url(#panelClip)">
+  <circle cx="600" cy="1122" r="912" fill="url(#groundGrad)"/>
+  <circle cx="600" cy="1122" r="912" fill="none" stroke="#F7E394" stroke-width="1.6" opacity="0.5">
+    <animate attributeName="opacity" values="0.25;0.8;0.25" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="600" cy="1122" r="912" fill="none" stroke="#D4AF37" stroke-width="5" opacity="0.12">
+    <animate attributeName="opacity" values="0.06;0.16;0.06" dur="4.5s" repeatCount="indefinite"/></circle>
+</g>
+<path d="M330 240 L330 214 L346 220 L330 226" fill="#D4AF37" stroke="#D4AF37" stroke-width="1" opacity="0.9"/>
+<circle cx="330" cy="244" r="3" fill="#F7E394"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/></circle>
+<path d="M 340 232 C 520 108 700 84 790 94 C 880 104 990 122 1064 130" fill="none" stroke="#D4AF37" stroke-width="1.4" stroke-dasharray="3 7" opacity="0.65">
+  <animate attributeName="stroke-dashoffset" values="0;40" dur="3.5s" repeatCount="indefinite"/></path>
+<g><animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#dreamPath"/></animateMotion>
+  <line x1="-26" y1="0" x2="0" y2="0" stroke="url(#tailGrad)" stroke-width="1.8" stroke-linecap="round"/>
+  <circle r="9" fill="url(#headGlow)"/><circle r="2.8" fill="#FFF7D6"/></g>
+<g><animateMotion dur="8s" begin="-4s" repeatCount="indefinite" rotate="auto"><mpath href="#dreamPath"/></animateMotion>
+  <circle r="5" fill="url(#headGlow)"/><circle r="1.7" fill="#F7E394"/></g>
+<circle cx="790" cy="94" r="20" fill="url(#nodeHalo)"><animate attributeName="opacity" values="0.45;1;0.45" dur="3.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+<circle cx="790" cy="94" r="5.5" fill="#F7E394" stroke="#FFF7D6" stroke-width="1.2">
+  <animate attributeName="r" values="4.5;6.2;4.5" dur="3.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+<path d="M774 94 H806 M790 78 V110" stroke="#FFF3C4" stroke-width="1" opacity="0.8"><animate attributeName="opacity" values="0.3;0.95;0.3" dur="3.6s" begin="0.5s" repeatCount="indefinite"/></path>
+<text x="790" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="22" letter-spacing="4" fill="#F7E394">ITMO</text>
+<text x="790" y="126" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="8" letter-spacing="2" fill="#8F7B45">SAINT PETERSBURG</text>
+<circle cx="1010" cy="130" r="18" fill="url(#nodeHalo)"><animate attributeName="opacity" values="0.45;1;0.45" dur="4.2s" begin="1.3s" repeatCount="indefinite"/></circle>
+<circle cx="1010" cy="130" r="5" fill="#F7E394" stroke="#FFF7D6" stroke-width="1.2">
+  <animate attributeName="r" values="4;5.6;4" dur="4.2s" begin="1.3s" repeatCount="indefinite"/></circle>
+<path d="M996 130 H1024 M1010 116 V144" stroke="#FFF3C4" stroke-width="1" opacity="0.8"><animate attributeName="opacity" values="0.3;0.95;0.3" dur="4.2s" begin="1.3s" repeatCount="indefinite"/></path>
+<text x="1010" y="100" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="22" letter-spacing="4" fill="#F7E394">KFU</text>
+<text x="1010" y="162" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="8" letter-spacing="2" fill="#8F7B45">KAZAN</text>
+<text x="600" y="336" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="13" fill="#B99B3E">«В надежде на учёбу в России»<animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/></text></svg>
