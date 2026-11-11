@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/assets/profile-banner.svg" alt="MOHAMMAD SADEGHI — Founder of TEKA — animated golden galaxy banner" width="100%">
+<img src=".github/assets/profile-banner.svg" alt="MOHAMMAD SADEGHI — Founder of TEKA — the golden TEKA emblem rising above a living galaxy" width="100%">
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=19&duration=2800&pause=900&color=F5D678&center=true&vCenter=true&width=720&height=50&lines=EXPLORING+THE+DIGITAL+UNIVERSE;BUILDING+THE+TEKA+ECOSYSTEM;SOFTWARE+%7C+WEB3+%7C+BLOCKCHAIN;TURNING+IDEAS+INTO+REALITY" alt="Mohammad Sadeghi — animated taglines" />
 
@@ -13,13 +13,13 @@
 <br><br>
 
 <a href="https://github.com/mhmdsdqi87-cloud"><img src="https://img.shields.io/badge/GITHUB-0A0A0A?style=flat-square&logo=github&logoColor=D4AF37"/></a>
-<a href="https://teka-web-beta.vercel.app"><img src="https://img.shields.io/badge/TEKA-D4AF37?style=flat-square&logo=googlechrome&logoColor=0A0A0A"/></a>
-<a href="https://teka-nexus.vercel.app"><img src="https://img.shields.io/badge/TEKA_NEXUS-0A0A0A?style=flat-square&logo=vercel&logoColor=D4AF37"/></a>
+<a href="https://teka-nexus.vercel.app"><img src="https://img.shields.io/badge/TEKA_NEXUS-D4AF37?style=flat-square&logo=googlechrome&logoColor=0A0A0A"/></a>
+<a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS"><img src="https://img.shields.io/badge/SOURCE_CODE-0A0A0A?style=flat-square&logo=github&logoColor=D4AF37"/></a>
 <a href="mailto:mhmdsdqi87@gmail.com"><img src="https://img.shields.io/badge/CONTACT-0A0A0A?style=flat-square&logo=gmail&logoColor=D4AF37"/></a>
 
 <br><br>
 
-<img src=".github/assets/nexus-constellation.svg" alt="A pulse traveling through the nexus constellation" width="100%"/>
+<img src=".github/assets/nexus-constellation.svg" alt="A pulse traveling through the golden nexus constellation" width="100%"/>
 
 ### ✦ WELCOME TO MY UNIVERSE ✦
 
@@ -29,7 +29,13 @@
 
 ---
 
-<h2 align="center">Ⅰ &nbsp; THE EXPLORER</h2>
+<h2 align="center">Ⅰ &nbsp; THE FOUNDER</h2>
+
+<div align="center">
+
+<img src=".github/assets/logo-emblem.svg" alt="The TEKA emblem — golden mark, silver wordmark, orbiting halos" width="420"/>
+
+</div>
 
 I'm **Mohammad Sadeghi** — a self-taught software developer and the founder of **TEKA**.
 
@@ -59,10 +65,8 @@ independent projects — web development, blockchain, software architecture and 
 <div align="center">
 
 <a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS">
-  <img src="https://raw.githubusercontent.com/mhmdsdqi87-cloud/TEKA-NEXUS/main/.github/assets/banner.svg" alt="TEKA NEXUS — animated brand banner" width="100%"/>
+  <img src=".github/assets/teka-nexus-card.svg" alt="TEKA NEXUS — live v1.75.0 — 7 languages — 300 academy lessons — 12 game modules" width="100%"/>
 </a>
-
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=17&duration=3000&pause=900&color=F5D678&center=true&vCenter=true&width=720&height=46&lines=TEKA+NEXUS+%E2%9C%A6+THE+FLAGSHIP;SOCIAL+NETWORK+FOR+DEVELOPERS;FREE+300-LESSON+CODING+ACADEMY;12+CODING-GAME+MODULES+%C2%B7+7+LANGUAGES" alt="TEKA NEXUS highlights" />
 
 **A social network for developers + a free 300-lesson coding academy + 12 coding-game
 modules — one installable PWA in 7 languages. Built solo, shipped live.**
@@ -77,7 +81,7 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 <br><br>
 
-<img src=".github/assets/orbit-empire.svg" alt="The TEKA Empire — real projects orbiting the TEKA core" width="100%"/>
+<img src=".github/assets/orbit-empire.svg" alt="The TEKA empire — real projects orbiting the golden TEKA mark" width="100%"/>
 
 <br>
 
@@ -90,7 +94,7 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 </div>
 
-<img src=".github/assets/nexus-constellation.svg" alt="Nexus constellation divider" width="100%"/>
+<img src=".github/assets/galaxy-spiral.svg" alt="A rotating golden spiral galaxy — one galaxy, one builder" width="100%"/>
 
 ---
 
@@ -109,7 +113,7 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 </div>
 
-<img src=".github/assets/meteor-divider.svg" alt="Meteor divider" width="100%"/>
+<img src=".github/assets/nexus-constellation.svg" alt="Nexus constellation divider" width="100%"/>
 
 ---
 
@@ -121,7 +125,7 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 <br><br>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=07070A&color=E6BD69&line=D4AF37&point=F7E394&area=true&area_color=3D2E08&hide_border=true&custom_title=THE%20CONTRIBUTION%20GALAXY" alt="Contribution activity graph"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=07070A&color=E6BD69&line=D4AF37&point=FFF7D6&area=true&area_color=3D2E08&hide_border=true&custom_title=THE%20CONTRIBUTION%20GALAXY" alt="Contribution activity graph"/>
 
 <br><br>
 
@@ -143,7 +147,7 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 </div>
 
-<img src=".github/assets/nexus-constellation.svg" alt="Nexus constellation divider" width="100%"/>
+<img src=".github/assets/meteor-divider.svg" alt="Meteor divider" width="100%"/>
 
 ---
 
@@ -197,6 +201,8 @@ degree, no teachers, no team — only the internet, long nights and stubbornness
 <div align="center">
 
 <img src=".github/assets/cosmic-footer.svg" alt="A satellite crossing a glowing planet horizon" width="100%"/>
+
+<img src=".github/assets/signature.svg" alt="The golden signature of Mohammad Sadeghi drawing itself" width="480"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=17&duration=3000&pause=1100&color=F5D678&center=true&vCenter=true&width=720&height=46&lines=THE+UNIVERSE+IS+FULL+OF+POSSIBILITIES;ONE+IDEA+CAN+START+A+NEW+WORLD;KEEP+BUILDING.+KEEP+EXPLORING." alt="Closing taglines" />
 

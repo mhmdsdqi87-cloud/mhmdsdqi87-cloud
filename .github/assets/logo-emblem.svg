@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="430" viewBox="0 0 560 430" role="img" aria-label="TEKA emblem — animated golden mark with silver wordmark">
+  <defs>
+    <linearGradient id="goldBar" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#5A430E"/><stop offset="0.24" stop-color="#A87F1E"/>
+      <stop offset="0.52" stop-color="#E9C75C"/><stop offset="0.78" stop-color="#F7E394"/>
+      <stop offset="1" stop-color="#FFF7D6"/>
+    </linearGradient>
+    <linearGradient id="goldShoulder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8860B"/><stop offset="0.5" stop-color="#E9C75C"/><stop offset="1" stop-color="#F7E394"/>
+    </linearGradient>
+    <linearGradient id="goldProngL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7E394"/><stop offset="0.55" stop-color="#D4AF37"/><stop offset="1" stop-color="#8A5A1A"/>
+    </linearGradient>
+    <linearGradient id="goldProngR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9C75C"/><stop offset="0.55" stop-color="#B8860B"/><stop offset="1" stop-color="#6E5512"/>
+    </linearGradient>
+    <linearGradient id="silverWM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F2F2"/><stop offset="0.45" stop-color="#C9C9C9"/><stop offset="1" stop-color="#6A6A6A"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F7E394" stop-opacity="0.22"/><stop offset="0.5" stop-color="#D4AF37" stop-opacity="0.09"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="markClip">
+      <path d="M0,0 L224,0 L208,33 L16,33 Z M32,33 L96,33 L96,59 L48,59 Z M128,33 L188,33 L168,59 L128,59 Z M80,64 L100,64 L100,140 L91,148 L81,130 Z M128,64 L148,64 L146,124 L138,140 L128,120 Z"/>
+    </clipPath>
+    <clipPath id="wmClip">
+      <path d="M0,0 L40,0 L40,10 L28,10 L28,48 L12,48 L12,10 L0,10 Z M72,0 L120,0 L120,9 L72,9 Z M72,19 L120,19 L120,28 L72,28 Z M72,38 L120,38 L120,48 L72,48 Z M144,0 L160,0 L160,48 L144,48 Z M152,24 L176,0 L188,0 L164,28 Z M158,26 L170,26 L186,48 L172,48 Z M232,0 L246,0 L219,48 L203,48 Z M238,0 L250,0 L257,48 L242,48 Z"/>
+    </clipPath>
+    <circle id="haloPath" cx="280" cy="168" r="152" fill="none"/>
+    <circle id="haloPath2" cx="280" cy="168" r="176" fill="none"/>
+  </defs>
+
+  <rect width="560" height="430" fill="#050505"/>
+  <rect width="560" height="430" fill="url(#core)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="140.9" cy="346.0" r="0.83" fill="#F7E394" opacity="0.51"><animate attributeName="opacity" values="0.51;0.81;0.51" dur="3.85s" begin="3.06s" repeatCount="indefinite"/></circle>
+  <circle cx="468.2" cy="23.5" r="1.75" fill="#D8D8D8" opacity="0.34"><animate attributeName="opacity" values="0.34;0.64;0.34" dur="4.51s" begin="2.54s" repeatCount="indefinite"/></circle>
+  <circle cx="58.7" cy="328.2" r="1.29" fill="#F7E394" opacity="0.36"><animate attributeName="opacity" values="0.36;0.6599999999999999;0.36" dur="2.9s" begin="0.4s" repeatCount="indefinite"/></circle>
+  <circle cx="389.5" cy="43.0" r="1.62" fill="#D8D8D8" opacity="0.79"><animate attributeName="opacity" values="0.79;1;0.79" dur="4.32s" begin="3.72s" repeatCount="indefinite"/></circle>
+  <circle cx="62.9" cy="199.3" r="0.79" fill="#D8D8D8" opacity="0.68"><animate attributeName="opacity" values="0.68;0.98;0.68" dur="3.8s" begin="0.53s" repeatCount="indefinite"/></circle>
+  <circle cx="77.1" cy="392.4" r="0.76" fill="#D8D8D8" opacity="0.71"><animate attributeName="opacity" values="0.71;1;0.71" dur="4.93s" begin="3.76s" repeatCount="indefinite"/></circle>
+  <circle cx="519.7" cy="26.2" r="1.25" fill="#F7E394" opacity="0.27"><animate attributeName="opacity" values="0.27;0.5700000000000001;0.27" dur="3.33s" begin="4.95s" repeatCount="indefinite"/></circle>
+  <circle cx="540.3" cy="379.5" r="1.46" fill="#F7E394" opacity="0.28"><animate attributeName="opacity" values="0.28;0.5800000000000001;0.28" dur="3.63s" begin="3.46s" repeatCount="indefinite"/></circle>
+  <circle cx="464.1" cy="383.6" r="1.72" fill="#D8D8D8" opacity="0.66"><animate attributeName="opacity" values="0.66;0.96;0.66" dur="3.9s" begin="0.31s" repeatCount="indefinite"/></circle>
+  <circle cx="419.7" cy="318.9" r="0.73" fill="#F7E394" opacity="0.25"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="2.63s" begin="4.62s" repeatCount="indefinite"/></circle>
+  <circle cx="485.7" cy="67.1" r="0.99" fill="#F7E394" opacity="0.67"><animate attributeName="opacity" values="0.67;0.97;0.67" dur="2.62s" begin="0.82s" repeatCount="indefinite"/></circle>
+  <circle cx="525.6" cy="106.7" r="1.25" fill="#D8D8D8" opacity="0.46"><animate attributeName="opacity" values="0.46;0.76;0.46" dur="4.95s" begin="3.56s" repeatCount="indefinite"/></circle>
+  <circle cx="461.8" cy="53.8" r="1.38" fill="#F7E394" opacity="0.41"><animate attributeName="opacity" values="0.41;0.71;0.41" dur="3.12s" begin="2.27s" repeatCount="indefinite"/></circle>
+  <circle cx="22.1" cy="69.4" r="0.8" fill="#D8D8D8" opacity="0.73"><animate attributeName="opacity" values="0.73;1;0.73" dur="3.73s" begin="3.39s" repeatCount="indefinite"/></circle>
+
+  <!-- rotating dashed halos -->
+  <circle cx="280" cy="168" r="152" fill="none" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="4 10">
+    <animateTransform attributeName="transform" type="rotate" from="0 280 168" to="360 280 168" dur="46s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="168" r="176" fill="none" stroke="#8C8C96" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="2 12">
+    <animateTransform attributeName="transform" type="rotate" from="360 280 168" to="0 280 168" dur="64s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="168" r="164" fill="none" stroke="#D4AF37" stroke-opacity="0.14" stroke-width="1">
+    <animate attributeName="r" values="160;170;160" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <g><animateMotion dur="40s" begin="0s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="3" fill="#F7E394" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-5s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="2.2" fill="#C9C9C9" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-10s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="3" fill="#F7E394" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-15s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="2.2" fill="#C9C9C9" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-20s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="3" fill="#F7E394" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-25s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="2.2" fill="#C9C9C9" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-30s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="3" fill="#F7E394" opacity="0.9"/></g>
+  <g><animateMotion dur="40s" begin="-35s" repeatCount="indefinite"><mpath href="#haloPath"/></animateMotion><circle r="2.2" fill="#C9C9C9" opacity="0.9"/></g>
+
+  <!-- THE MARK -->
+  <g transform="translate(136.64 73.28) scale(1.28)">
+    <ellipse cx="112" cy="72" rx="120" ry="80" fill="#D4AF37" opacity="0.08">
+      <animate attributeName="opacity" values="0.08;0.17;0.08" dur="4.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <path d="M0,0 L224,0 L208,33 L16,33 Z" fill="url(#goldBar)"/>
+    <path d="M0,0 L224,0 L221.5,5.5 L2.5,5.5 Z" fill="#FFF7D6" opacity="0.55">
+      <animate attributeName="opacity" values="0.55;0.9;0.55" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M16,33 L208,33 L205,28.5 L19,28.5 Z" fill="#6E5512" opacity="0.75"/>
+    <path d="M32,33 L96,33 L96,59 L48,59 Z" fill="url(#goldShoulder)"/>
+    <path d="M128,33 L188,33 L168,59 L128,59 Z" fill="url(#goldShoulder)"/>
+    <path d="M32,33 L96,33 L96,37 L34,37 Z" fill="#FFF7D6" opacity="0.5"/>
+    <path d="M128,33 L188,33 L168,59 L128,59 Z" fill="#6E5512" opacity="0.18"/>
+    <path d="M80,64 L100,64 L100,140 L91,148 L81,130 Z" fill="url(#goldProngL)"/>
+    <path d="M128,64 L148,64 L146,124 L138,140 L128,120 Z" fill="url(#goldProngR)"/>
+    <path d="M80,64 L100,64 L100,68 L80,68 Z" fill="#FFF7D6" opacity="0.6"/>
+    <path d="M128,64 L148,64 L148,67 L128,67 Z" fill="#FFF7D6" opacity="0.35"/>
+  </g>
+  <g transform="translate(136.64 73.28) scale(1.28)">
+    <g clip-path="url(#markClip)">
+      <rect x="-150" y="-12" width="110" height="180" fill="url(#shineGrad)" transform="skewX(-18)">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 540 0" dur="4.2s" begin="0.8s" repeatCount="indefinite" additive="sum"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(172 286) scale(0.85)">
+    <path d="M0,0 L40,0 L40,10 L28,10 L28,48 L12,48 L12,10 L0,10 Z" fill="url(#silverWM)"/>
+    <path d="M72,0 L120,0 L120,9 L72,9 Z" fill="url(#silverWM)"/>
+    <path d="M72,19 L120,19 L120,28 L72,28 Z" fill="url(#silverWM)"/>
+    <path d="M72,38 L120,38 L120,48 L72,48 Z" fill="url(#silverWM)"/>
+    <path d="M144,0 L160,0 L160,48 L144,48 Z" fill="url(#silverWM)"/>
+    <path d="M152,24 L176,0 L188,0 L164,28 Z" fill="url(#silverWM)"/>
+    <path d="M158,26 L170,26 L186,48 L172,48 Z" fill="url(#silverWM)"/>
+    <path d="M232,0 L246,0 L219,48 L203,48 Z" fill="url(#silverWM)"/>
+    <path d="M238,0 L250,0 L257,48 L242,48 Z" fill="url(#silverWM)"/>
+  </g>
+  <g transform="translate(172 286) scale(0.85)">
+    <g clip-path="url(#wmClip)">
+      <rect x="-80" y="-6" width="46" height="62" fill="url(#shineGrad)" transform="skewX(-16)">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 420 0" dur="5s" begin="1.6s" repeatCount="indefinite" additive="sum"/>
+      </rect>
+    </g>
+  </g>
+
+  <text x="280" y="376" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" letter-spacing="6" fill="#9C9CA6">THINK BEYOND &#10022; BUILD WITH PURPOSE
+    <animate attributeName="opacity" values="1;0.5;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+</svg>
