@@ -1,0 +1,37 @@
+name: 🔭 Observatory Refresh
+
+on:
+  schedule:
+    # daily at 03:41 UTC — refresh the observatory stats panel with real API data
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Regenerate observatory panel from the GitHub API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_observatory.py
+
+      - name: Commit if the numbers changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain .github/assets/observatory-stats.svg)" ]]; then
+            git add .github/assets/observatory-stats.svg
+            git commit -m "observatory: refresh real account numbers [skip ci]"
+            git push
+          else
+            echo "Numbers unchanged — no commit."
+          fi

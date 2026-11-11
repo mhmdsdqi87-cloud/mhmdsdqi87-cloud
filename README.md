@@ -51,8 +51,7 @@ independent projects — web development, blockchain, software architecture and 
 
 <br>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=mhmdsdqi87-cloud&show_icons=true&hide_border=true&bg_color=07070A&title_color=F7E394&icon_color=D4AF37&text_color=E8E0D0&rank_icon=github" alt="GitHub stats"/>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhmdsdqi87-cloud&layout=compact&hide_border=true&bg_color=07070A&title_color=F7E394&text_color=E8E0D0" alt="Top languages"/>
+<img src=".github/assets/observatory-stats.svg" alt="Real account numbers counted live from the GitHub API — repositories, contributions, stars, followers" width="100%"/>
 
 </div>
 
@@ -85,12 +84,7 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 <br>
 
-<a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=mhmdsdqi87-cloud&repo=TEKA-NEXUS&hide_border=true&bg_color=07070A&title_color=F7E394&text_color=E8E0D0&icon_color=D4AF37" alt="TEKA-NEXUS pinned card"/>
-</a>
-<a href="https://github.com/mhmdsdqi87-cloud/TEKA_QURAN">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=mhmdsdqi87-cloud&repo=TEKA_QURAN&hide_border=true&bg_color=07070A&title_color=F7E394&text_color=E8E0D0&icon_color=D4AF37" alt="TEKA_QURAN pinned card"/>
-</a>
+<sub><b>TEKA NEXUS</b> &#183; flagship platform &#8212; <b>TEKA QURAN</b> &#183; digital Quran experience &#8212; both real, both live on GitHub</sub>
 
 </div>
 
@@ -125,9 +119,6 @@ modules — one installable PWA in 7 languages. Built solo, shipped live.**
 
 <br><br>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mhmdsdqi87-cloud&bg_color=07070A&color=E6BD69&line=D4AF37&point=FFF7D6&area=true&area_color=3D2E08&hide_border=true&custom_title=THE%20CONTRIBUTION%20GALAXY" alt="Contribution activity graph"/>
-
-<br><br>
 
 <a href="https://github.com/mhmdsdqi87-cloud/TEKA-NEXUS">
   <picture>
