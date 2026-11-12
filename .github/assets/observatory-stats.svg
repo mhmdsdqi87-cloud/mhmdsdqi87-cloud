@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="GitHub observatory — real account numbers counted live from the GitHub API: 12 public repositories, 444 contributions in the last year, 14 stars earned, 2 followers">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="GitHub observatory — real account numbers counted live from the GitHub API: 12 public repositories, 497 contributions in the last year, 14 stars earned, 2 followers">
   <defs>
     <linearGradient id="obGold" x1="0" y1="0" x2="1" y2="0.25">
       <stop offset="0" stop-color="#6E5512"/><stop offset="0.3" stop-color="#C9A227"/>
@@ -54,7 +54,7 @@
     </rect>
     <path d="M358,128 L380,128 M358,128 L358,148" stroke="#D4AF37" stroke-width="2" fill="none"/>
     <path d="M586,246 L564,246 M586,246 L586,226" stroke="#D4AF37" stroke-width="2" fill="none"/>
-    <text x="472" y="185" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="40" fill="#F7E394">444</text>
+    <text x="472" y="185" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="40" fill="#F7E394">497</text>
     <text x="472" y="214" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#9C9CA6">CONTRIBUTIONS</text>
     <text x="472" y="234" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#6E6E78">LAST YEAR</text>
   </g>
