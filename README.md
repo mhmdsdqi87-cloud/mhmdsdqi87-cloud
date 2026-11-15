@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/assets/russia-flag-animated.svg" alt="Pixel-art flag of Russia waving on a golden pole, with the golden double-headed eagle riding the cloth — the dream destination, with the ITMO and KFU stars on a trajectory strip pointing to the full analysis below" width="100%">
+<img src=".github/assets/russia-flag-animated.svg" alt="Pixel-art panorama: the flag of Russia waving on a golden pole with the Soviet hammer and sickle on the cloth and the golden double-headed eagle rising behind it, a Su-37 streaking across the starry sky, and a lone traveler in a Soviet ushanka watching from a rooftop — the dream road below runs Tehran, ITMO Saint Petersburg, KFU Kazan" width="100%">
 
 <img src=".github/assets/profile-banner.svg" alt="MOHAMMAD SADEGHI — Founder of TEKA — the golden TEKA emblem rising above a living galaxy" width="100%">
 
