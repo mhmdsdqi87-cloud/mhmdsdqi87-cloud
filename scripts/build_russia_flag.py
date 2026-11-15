@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""russia-flag-animated — the Russian tricolor waving in golden space, hoisted at the top of the profile.
+"""russia-flag-animated — the Russian tricolor in pixel art, waving at the top of the profile.
 
-One seamless SMIL loop: the fabric rolls on a real sine wave (pole-fixed amplitude),
-moving sheen and fold shadows ride the same phase, a gold pole with a twinkling
-finial anchors the cloth, and a slim trajectory strip carries the dream —
-Tehran toward the ITMO and KFU stars — pointing at the full analysis below.
+A panoramic pixel-world panel: the tricolor is built from chunky pixel columns
+that bob on a sine phase (pole-fixed amplitude), the golden double-headed
+eagle rides the center of the cloth, a CRT scanline sweeps the fabric, and a
+slim trajectory strip carries the dream — Tehran toward the ITMO and KFU
+stars — pointing at the full analysis below.
 
 Regenerate with:  python3 scripts/build_russia_flag.py
 """
@@ -15,208 +16,212 @@ from pathlib import Path
 ASSETS = Path(__file__).resolve().parent.parent / '.github' / 'assets'
 OUT = ASSETS / 'russia-flag-animated.svg'
 
-W, H = 1200, 660
+W, H = 1200, 430
 # Official Russian flag proportions: 3:2, three equal horizontal stripes.
-FX, FY, FW, FH = 224, 30, 744, 496
-STRIPES = [
-    ('flagWhite', '#FFFFFF', '#F2F5FA', '#D9DFEA'),
-    ('flagBlue', '#0A47B0', '#0039A6', '#002469'),
-    ('flagRed', '#E8452F', '#D52B1E', '#A3170D'),
-]
-AMP = 14.0          # crest amplitude at the free edge, px
-WAVELEN = 248.0     # px between crests
-DUR = 3.6           # seconds for one full wave phase cycle
-PHASES = [0.0, 2 * math.pi / 3, 4 * math.pi / 3]  # seamless loop keyframes
-TRAJ_D = 'M 250 604 C 380 592 500 586 620 590 C 760 595 880 610 962 606'
+FX, FY, FW, FH = 110, 16, 600, 400
+COL_W = 24                 # one pixel-column of cloth
+AMP = 14                   # crest amplitude at the free edge, px
+STEP = 3                   # pixel quantization of the bob, px
+DUR = 3.6                  # seconds for one full wave phase cycle
+PHASES = [0.0, 2 * math.pi / 3, 4 * math.pi / 3]
+GOLD, GOLD_HI, GOLD_LO, INK = '#F7E394', '#C9A227', '#6E5512', '#1A1408'
+
+# Flat pixel palette — official tricolor, no gradients in pixel world.
+WHITE, BLUE, RED = '#FFFFFF', '#0039A6', '#D52B1E'
+WHITE_LO, BLUE_LO, RED_LO = '#D9DFEA', '#002469', '#A3170D'
+
+N_COLS = FW // COL_W
 
 
-def amplitude_at(x: float) -> float:
-    """Cloth is pinned at the pole: amplitude grows from a nudge to full crest."""
-    grow = max(0.0, (x - FX) / FW)
-    return AMP * (0.22 + 0.78 * grow)
+def bob(i: int, phase: float) -> int:
+    x = (i + 0.5) * COL_W
+    grow = 0.20 + 0.80 * i / (N_COLS - 1)      # cloth pinned at the pole
+    return int(round(AMP * grow * math.sin(2 * math.pi * x / 248.0 + phase) / STEP)) * STEP
 
 
-def edge_y(base: float, x: float, phase: float) -> float:
-    return base + amplitude_at(x) * math.sin(2 * math.pi * x / WAVELEN + phase)
+def columns_svg() -> str:
+    parts = []
+    for i in range(N_COLS):
+        x = FX + i * COL_W
+        blocks = []
+        for j, (top, lo) in enumerate([(WHITE, WHITE_LO), (BLUE, BLUE_LO), (RED, RED_LO)]):
+            y = FY + j * FH / 3
+            blocks.append(f'<rect x="{x}" y="{y:.0f}" width="{COL_W}" height="{FH / 3:.0f}" fill="{top}"/>')
+            # pixel shading baked into the cloth: sheen strip + fold strip
+            blocks.append(f'<rect x="{x}" y="{y:.0f}" width="{COL_W}" height="8" fill="#FFFFFF" opacity="0.14"/>')
+            blocks.append(f'<rect x="{x}" y="{y + FH / 3 - 10:.0f}" width="{COL_W}" height="10" fill="#000000" opacity="0.16"/>')
+            blocks.append(f'<rect x="{x + COL_W - 3}" y="{y:.0f}" width="3" height="{FH / 3:.0f}" fill="{lo}"/>')
+        values = ';'.join(f'0 {bob(i, p)}' for p in PHASES) + f';0 {bob(i, 0)}'
+        parts.append(
+            f'<g><animateTransform attributeName="transform" type="translate" values="{values}" dur="{DUR}s" repeatCount="indefinite"/>'
+            + ''.join(blocks) + '</g>'
+        )
+    return ''.join(parts)
 
 
-def ribbon(points):
-    """Catmull-Rom spline through the samples, emitted as cubic beziers."""
-    pts = [points[0]] + points + [points[-1]]
-    segs = [f'M {points[0][0]:.1f},{points[0][1]:.1f}']
-    for i in range(1, len(pts) - 2):
-        p0, p1, p2, p3 = pts[i - 1], pts[i], pts[i + 1], pts[i + 2]
-        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
-        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
-        segs.append(f'C {c1[0]:.1f},{c1[1]:.1f} {c2[0]:.1f},{c2[1]:.1f} {p2[0]:.1f},{p2[1]:.1f}')
-    return ' '.join(segs)
+# ---------------------------------------------------------------------------
+# The golden double-headed eagle, built from symmetric pixel rects.
+# Unit grid: 44 x 34 units, mirrored around x=22; rendered at PX px per unit.
+# ---------------------------------------------------------------------------
+PX = 5
+EAGLE_W_UNITS, EAGLE_H_UNITS = 44, 34
+EX, EY = FX + FW / 2 - EAGLE_W_UNITS * PX / 2, FY + FH / 2 - EAGLE_H_UNITS * PX / 2  # eagle origin on the canvas
 
 
-def wave_path(top_base: float, bottom_base: float, phase: float) -> str:
-    """Closed ribbon between two wave edges (top edge L→R, bottom edge R→L)."""
-    xs = [FX + i * 24.0 for i in range(int(FW / 24.0) + 1)]
-    if xs[-1] < FX + FW - 1e-6:
-        xs.append(FX + FW)
-    top = [(x, edge_y(top_base, x, phase)) for x in xs]
-    bottom = [(x, edge_y(bottom_base, x, phase)) for x in reversed(xs)]
-    top_segs = ribbon(top).split(' ')
-    bottom_segs = ribbon(bottom).split(' ')[1:]  # drop the duplicate M command
-    return ' '.join(top_segs + [f'L {bottom[0][0]:.1f},{bottom[0][1]:.1f}'] + bottom_segs + ['Z'])
+def px_rect(x, y, w, h, fill):
+    return f'<rect x="{EX + x * PX:.0f}" y="{EY + y * PX:.0f}" width="{w * PX}" height="{h * PX}" fill="{fill}"/>'
 
 
-def stripe_d(i: int, phase: float) -> str:
-    return wave_path(FY + i * FH / 3, FY + (i + 1) * FH / 3, phase)
+def mirrored(x, w):
+    """Mirror a left-half rect to the right half of the 44-unit grid."""
+    return EAGLE_W_UNITS - x - w, w
 
 
-def sheen_d(i: int, phase: float) -> str:
-    """Specular ribbon riding just under the top edge of each stripe."""
-    return wave_path(FY + i * FH / 3 + 10, FY + i * FH / 3 + 52, phase + 0.55)
+def eagle_rects() -> list:
+    """(x, y, w, h, color) list — left half + central pieces; caller mirrors."""
+    B, S = GOLD, GOLD_HI
+    r = []
+    # central crown: cross, orb, band, flanking points
+    r += [(21, 0, 2, 5, B), (19, 4, 6, 2, B), (17, 6, 10, 2, B)]
+    r += [(15, 3, 2, 3, B)]
+    r += [(17, 8, 10, 1, S)]
+    # heads with outward beaks and eyes
+    r += [(10, 10, 6, 4, B), (8, 12, 2, 2, B), (12, 11, 1, 1, INK)]
+    r += [(13, 14, 3, 2, B)]
+    # torso with inner shield
+    r += [(19, 12, 6, 11, B), (20, 15, 4, 4, S)]
+    # shoulder mass linking neck, body and the three wing fingers
+    r += [(16, 14, 3, 10, B)]
+    # three stepped wing fingers sweeping up and out
+    for (inner_y, outer_y) in ((14, 11), (18, 15), (22, 19)):
+        r += [(13, inner_y, 3, 2, B), (10, inner_y - 1, 3, 2, B), (7, outer_y + 1, 3, 2, B), (4, outer_y, 3, 2, B), (1, outer_y, 2, 2, B)]
+        r += [(10, inner_y + 1, 3, 1, S), (7, outer_y + 3, 3, 1, S), (4, outer_y + 2, 3, 1, S)]
+    # tail fan below the torso
+    r += [(18, 23, 8, 3, B), (17, 26, 10, 3, B), (16, 29, 12, 3, B)]
+    r += [(16, 32, 12, 1, S)]
+    r += [(20, 26, 1, 6, S), (24, 26, 1, 6, S)]
+    return r
 
 
-def fold_d(i: int, phase: float) -> str:
-    """Fold shadow hugging the bottom boundary of each stripe."""
-    return wave_path(FY + (i + 1) * FH / 3 - 20, FY + (i + 1) * FH / 3 - 2, phase)
+def eagle_svg() -> str:
+    shapes = eagle_rects()
+    out = []
+    # dark offset silhouette behind the gold — pixel drop shadow / outline
+    for x, y, w, h, _c in shapes:
+        out.append(px_rect(x + 1, y + 1, w, h, INK))
+    for x, y, w, h, _c in shapes:
+        mx, _mw = mirrored(x, w)
+        out.append(px_rect(mx + 1, y + 1, w, h, INK))
+    for x, y, w, h, c in shapes:
+        out.append(px_rect(x, y, w, h, c))
+        mx, _mw = mirrored(x, w)
+        out.append(px_rect(mx, y, w, h, c))
+    # gentle bob in sync with the cloth + a twinkle on the crown
+    out.append(
+        f'<animateTransform attributeName="transform" type="translate" '
+        f'values="0 -3;0 3;0 -3" dur="{DUR}s" repeatCount="indefinite"/>'
+    )
+    return f'<g>{"".join(out)}</g>'
 
 
-def morph_values(builder, i: int) -> str:
-    ds = [builder(i, p) for p in PHASES]
-    return ';'.join(ds + [ds[0]])  # d0;d1;d2;d0 — one seamless cycle
+def sparkle(x, y, dur, begin, size=4):
+    return (f'<g opacity="0.9"><rect x="{x - 1}" y="{y - size}" width="2" height="{size * 2}" fill="#FFF7D6"/>'
+            f'<rect x="{x - size}" y="{y - 1}" width="{size * 2}" height="2" fill="#FFF7D6"/>'
+            f'<animate attributeName="opacity" values="0.15;0.9;0.15" dur="{dur}s" begin="{begin}s" repeatCount="indefinite"/></g>')
 
 
-def animated_d(builder, i: int, extra=''):
-    return (f'<path d="{builder(i, 0)}" {extra}>'
-            f'<animate attributeName="d" values="{morph_values(builder, i)}" dur="{DUR}s" repeatCount="indefinite"/>'
-            f'</path>')
-
-
-# Star particles scattered over the panel margins.
-STARS = [(70, 96, 1.4, 3.1, 0.0), (150, 60, 1.0, 4.7, 0.9), (1080, 84, 1.3, 3.7, 1.6),
-         (1150, 210, 0.9, 5.3, 0.4), (90, 260, 1.1, 4.1, 1.2), (1120, 330, 1.4, 3.3, 2.1),
-         (60, 430, 1.0, 4.9, 0.7), (1160, 470, 1.2, 3.9, 1.9), (140, 560, 0.9, 4.4, 2.4),
-         (1060, 560, 1.1, 5.1, 0.2), (330, 596, 0.8, 4.6, 1.4), (870, 602, 0.8, 3.6, 0.6),
-         (180, 150, 0.8, 5.7, 2.7), (1030, 150, 0.8, 4.2, 1.1)]
-
-stars_svg = ''.join(
-    f'<circle cx="{x}" cy="{y}" r="{r}" fill="#E9C75C">'
-    f'<animate attributeName="opacity" values="0.14;0.85;0.14" dur="{d}s" begin="{b}s" repeatCount="indefinite"/>'
-    f'</circle>'
-    for x, y, r, d, b in STARS
-)
-
-stripes_svg = ''.join([
-    animated_d(stripe_d, i, f'fill="url(#{name})"')
-    for i, (name, _hi, _base, _lo) in enumerate(STRIPES)
-] + [
-    animated_d(sheen_d, i, 'fill="url(#sheenGrad)"') for i in range(len(STRIPES))
-] + [
-    animated_d(fold_d, i, 'fill="url(#foldGrad)"') for i in range(len(STRIPES))
+sparkles = ''.join([
+    sparkle(64, 78, 3.4, 0.0), sparkle(150, 210, 4.6, 1.2, 3), sparkle(70, 330, 4.1, 0.7, 3),
+    sparkle(742, 46, 3.8, 1.6, 3), sparkle(1160, 60, 3.1, 0.4), sparkle(980, 210, 4.4, 2.0, 3),
+    sparkle(1170, 250, 3.6, 1.1, 3), sparkle(760, 372, 4.0, 0.2, 3), sparkle(1146, 380, 3.3, 1.8, 3),
 ])
 
-CAPTION = 'СЛЕДУЮЩАЯ ГЛАВА — РОССИЯ'
+TRAJ_D = 'M 752 302 C 850 294 960 308 1150 298'
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="The flag of Russia waving in golden space — the dream destination, with the ITMO and KFU stars on a trajectory strip pointing to the full analysis below"><title>The flag of Russia waving in golden space — the dream destination, with the ITMO and KFU stars on a trajectory strip pointing to the full analysis below</title>
+eagle = eagle_svg()
+columns = columns_svg()
+
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Pixel-art flag of Russia waving on a golden pole, with the golden double-headed eagle riding the cloth — the dream destination, with the ITMO and KFU stars on a trajectory strip pointing to the full analysis below"><title>Pixel-art flag of Russia waving on a golden pole, with the golden double-headed eagle riding the cloth — the dream destination, with the ITMO and KFU stars on a trajectory strip pointing to the full analysis below</title>
 <defs>
-  <radialGradient id="panelGlow" cx="0.5" cy="0.34" r="0.75">
-    <stop offset="0" stop-color="#D4AF37" stop-opacity="0.10"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
-  </radialGradient>
-  <radialGradient id="flagHalo" cx="0.5" cy="0.5" r="0.5">
-    <stop offset="0" stop-color="#FFF7D6" stop-opacity="0.16"/><stop offset="1" stop-color="#FFF7D6" stop-opacity="0"/>
-  </radialGradient>
-  <linearGradient id="flagWhite" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F2F5FA"/><stop offset="1" stop-color="#D9DFEA"/>
-  </linearGradient>
-  <linearGradient id="flagBlue" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#0A47B0"/><stop offset="0.55" stop-color="#0039A6"/><stop offset="1" stop-color="#002469"/>
-  </linearGradient>
-  <linearGradient id="flagRed" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#E8452F"/><stop offset="0.55" stop-color="#D52B1E"/><stop offset="1" stop-color="#A3170D"/>
-  </linearGradient>
-  <linearGradient id="sheenGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.13"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-  </linearGradient>
-  <linearGradient id="foldGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.22"/>
-  </linearGradient>
-  <linearGradient id="poleGrad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#6E5512"/><stop offset="0.45" stop-color="#F7E394"/><stop offset="1" stop-color="#C9A227"/>
-  </linearGradient>
-  <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#6E5512"/><stop offset="0.3" stop-color="#C9A227"/>
-    <stop offset="0.5" stop-color="#F7E394"/><stop offset="0.7" stop-color="#C9A227"/><stop offset="1" stop-color="#6E5512"/>
-  </linearGradient>
-  <linearGradient id="trajGrad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#D4AF37" stop-opacity="0.15"/><stop offset="0.55" stop-color="#D4AF37" stop-opacity="0.9"/>
-    <stop offset="1" stop-color="#F7E394"/>
-  </linearGradient>
-  <radialGradient id="nodeHalo" cx="0.5" cy="0.5" r="0.5">
-    <stop offset="0" stop-color="#F7E394" stop-opacity="0.5"/><stop offset="1" stop-color="#F7E394" stop-opacity="0"/>
-  </radialGradient>
-  <radialGradient id="headGlow" cx="0.5" cy="0.5" r="0.5">
-    <stop offset="0" stop-color="#FFF7D6" stop-opacity="0.8"/><stop offset="1" stop-color="#FFF7D6" stop-opacity="0"/>
-  </radialGradient>
+  <pattern id="pxGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
   <path id="dreamStrip" d="{TRAJ_D}" fill="none"/>
 </defs>
 
-<rect width="{W}" height="{H}" rx="16" fill="#07070A"/>
-<rect width="{W}" height="{H}" rx="16" fill="url(#panelGlow)"/>
-<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="16" fill="none" stroke="#D4AF37" opacity="0.35"/>
-<rect x="10" y="10" width="{W - 20}" height="{H - 20}" rx="12" fill="none" stroke="#D4AF37" opacity="0.12"/>
+<rect width="{W}" height="{H}" fill="#07070A"/>
+<rect width="{W}" height="{H}" fill="url(#pxGrid)"/>
+<rect x="1" y="1" width="{W - 2}" height="{H - 2}" fill="none" stroke="{GOLD}" opacity="0.35"/>
+<rect x="6" y="6" width="{W - 12}" height="{H - 12}" fill="none" stroke="{GOLD}" opacity="0.12"/>
 
-{stars_svg}
+{sparkles}
 
-<!-- the dream strip: Tehran toward the ITMO and KFU stars, pulse riding the line -->
+<!-- right zone: the next chapter, in pixel type -->
+<g font-family="'Courier New', monospace" font-weight="700">
+  <text x="950" y="78" text-anchor="middle" font-size="13" letter-spacing="6" fill="#B9AE8F">THE NEXT CHAPTER</text>
+  <text x="950" y="120" text-anchor="middle" font-size="24" letter-spacing="7" fill="{GOLD}">СЛЕДУЮЩАЯ ГЛАВА</text>
+  <text x="950" y="162" text-anchor="middle" font-size="32" letter-spacing="12" fill="{GOLD_HI}">— РОССИЯ —</text>
+  <text x="950" y="162" text-anchor="middle" font-size="32" letter-spacing="12" fill="#FFF7D6" opacity="0">
+    <animate attributeName="opacity" values="0;0.3;0" dur="2.8s" repeatCount="indefinite"/>— РОССИЯ —</text>
+</g>
+
+<!-- right zone: the dream strip, pixel dashed road with a riding pulse -->
 <g>
-  <path d="{TRAJ_D}" fill="none" stroke="url(#trajGrad)" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round"/>
-  <circle cx="250" cy="604" r="7" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.8"/>
-  <circle cx="250" cy="604" r="3" fill="#F7E394"/>
-  <text x="250" y="626" text-anchor="middle" font-family="Verdana, sans-serif" font-size="11" letter-spacing="3" fill="#B9AE8F">TEHRAN</text>
+  <path d="{TRAJ_D}" fill="none" stroke="{GOLD}" stroke-opacity="0.75" stroke-width="2" stroke-dasharray="4 7" stroke-linecap="square"/>
+  <rect x="744" y="296" width="12" height="12" fill="none" stroke="{GOLD}" stroke-width="2"/>
+  <rect x="748" y="300" width="4" height="4" fill="{GOLD_HI}"/>
+  <text x="750" y="328" text-anchor="middle" font-family="'Courier New', monospace" font-weight="700" font-size="11" letter-spacing="3" fill="#B9AE8F">TEHRAN</text>
   <g>
-    <circle cx="620" cy="590" r="14" fill="url(#nodeHalo)">
-      <animate attributeName="r" values="12;18;12" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M620,582 L622.4,588 L628,588.6 L623.7,592.6 L625,598 L620,595 L615,598 L616.3,592.6 L612,588.6 L617.6,588 Z" fill="#F7E394"/>
-    <text x="620" y="626" text-anchor="middle" font-family="Verdana, sans-serif" font-size="12" font-weight="bold" letter-spacing="3" fill="#F5D678">ITMO · SAINT PETERSBURG</text>
+    <rect x="926" y="296" width="10" height="10" fill="{GOLD_HI}"/>
+    <rect x="929" y="293" width="4" height="16" fill="{GOLD_HI}"/>
+    <rect x="923" y="299" width="16" height="4" fill="{GOLD_HI}"/>
+    <text x="931" y="328" text-anchor="middle" font-family="'Courier New', monospace" font-weight="700" font-size="11" letter-spacing="3" fill="#F5D678">ITMO · SAINT PETERSBURG</text>
   </g>
   <g>
-    <circle cx="962" cy="606" r="16" fill="url(#nodeHalo)">
-      <animate attributeName="r" values="14;21;14" dur="3.4s" begin="0.8s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M962,597 L964.7,604 L972,604.7 L966.3,609.7 L968,616.6 L962,612.6 L956,616.6 L957.7,609.7 L952,604.7 L959.3,604 Z" fill="#FFF7D6"/>
-    <text x="962" y="640" text-anchor="middle" font-family="Verdana, sans-serif" font-size="12" font-weight="bold" letter-spacing="3" fill="#F5D678">KFU · KAZAN</text>
+    <rect x="1136" y="296" width="12" height="12" fill="#FFF7D6"/>
+    <rect x="1140" y="292" width="4" height="20" fill="#FFF7D6"/>
+    <rect x="1132" y="300" width="20" height="4" fill="#FFF7D6"/>
+    <text x="1142" y="328" text-anchor="middle" font-family="'Courier New', monospace" font-weight="700" font-size="11" letter-spacing="3" fill="#F5D678">KFU · KAZAN</text>
   </g>
   <g opacity="0.9">
     <animateMotion dur="4.8s" repeatCount="indefinite">
       <mpath xlink:href="#dreamStrip" href="#dreamStrip"/>
     </animateMotion>
-    <circle r="2.6" fill="#FFF7D6"/>
-    <circle r="6.5" fill="url(#headGlow)"/>
+    <rect x="-3" y="-3" width="6" height="6" fill="#FFF7D6"/>
+    <rect x="-6" y="-6" width="12" height="12" fill="#FFF7D6" opacity="0.3"/>
   </g>
 </g>
 
-<!-- the golden pole -->
+<!-- the pixel flag: drop shadow slab, then bobbing pixel columns -->
+<rect x="{FX + 8}" y="{FY + 10}" width="{FW}" height="{FH}" fill="#000000" opacity="0.4"/>
+{columns}
+
+<!-- CRT scanline sweeping the cloth -->
+<g opacity="0.16">
+  <rect x="{FX}" y="{FY}" width="{FW + 8}" height="3" fill="#FFF7D6">
+    <animate attributeName="y" values="{FY};{FY + FH - 3}" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- the golden double-headed eagle riding the cloth -->
+{eagle}
+<rect x="{EX + 18 * PX:.0f}" y="{EY - 10:.0f}" width="6" height="6" fill="#FFF7D6">
+  <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+</rect>
+
+<!-- the pixel pole -->
 <g>
-  <rect x="212" y="34" width="10" height="500" rx="4" fill="url(#poleGrad)"/>
-  <ellipse cx="217" cy="538" rx="15" ry="5" fill="#C9A227" opacity="0.55"/>
-  <circle cx="217" cy="26" r="7" fill="#F7E394">
-    <animate attributeName="opacity" values="1;0.55;1" dur="2.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="217" cy="26" r="13" fill="url(#nodeHalo)"/>
+  <rect x="88" y="20" width="16" height="398" fill="{GOLD_LO}"/>
+  <rect x="88" y="20" width="5" height="398" fill="{GOLD_HI}"/>
+  <rect x="88" y="20" width="2" height="398" fill="{GOLD}"/>
+  <rect x="82" y="8" width="10" height="12" fill="{GOLD_HI}"/>
+  <rect x="85" y="2" width="4" height="6" fill="{GOLD}"/>
+  <rect x="74" y="416" width="44" height="8" fill="{GOLD_HI}"/>
+  <rect x="70" y="424" width="52" height="4" fill="{GOLD_LO}"/>
 </g>
-
-<!-- the tricolor, pinned at the pole, fading in like a hoist -->
-<g opacity="0">
-  <animate attributeName="opacity" values="0;1" dur="1.1s" fill="freeze"/>
-  <ellipse cx="{FX + FW / 2}" cy="{FY + FH / 2}" rx="{FW * 0.62:.0f}" ry="{FH * 0.62:.0f}" fill="url(#flagHalo)"/>
-  {stripes_svg}
-</g>
-
-<!-- caption: the next chapter -->
-<text x="600" y="568" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="27" letter-spacing="11" fill="url(#titleGrad)">{CAPTION}</text>
-<text x="600" y="568" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="27" letter-spacing="11" fill="#F7E394" opacity="0">
-  <animate attributeName="opacity" values="0;0.28;0" dur="2.8s" repeatCount="indefinite"/>{CAPTION}</text>
 </svg>
 '''
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text(svg, encoding='utf-8')
-print(f'{OUT.name}: {len(svg)} bytes, {len(re.findall(r"<animate", svg))} animate + {len(re.findall(r"<animateMotion", svg))} animateMotion nodes')
+print(f'{OUT.name}: {len(svg)} bytes, {len(re.findall(r"<animate", svg))} animate + {len(re.findall(r"<animateTransform", svg))} animateTransform nodes, {N_COLS} pixel columns')
