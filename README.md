@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src=".github/assets/russia-flag-animated.svg" alt="The flag of Russia waving in golden space — the dream destination, with the ITMO and KFU stars on a trajectory strip pointing to the full analysis below" width="100%">
+
 <img src=".github/assets/profile-banner.svg" alt="MOHAMMAD SADEGHI — Founder of TEKA — the golden TEKA emblem rising above a living galaxy" width="100%">
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=19&duration=2800&pause=900&color=F5D678&center=true&vCenter=true&width=720&height=50&lines=EXPLORING+THE+DIGITAL+UNIVERSE;BUILDING+THE+TEKA+ECOSYSTEM;SOFTWARE+%7C+WEB3+%7C+BLOCKCHAIN;TURNING+IDEAS+INTO+REALITY" alt="Mohammad Sadeghi — animated taglines" />
